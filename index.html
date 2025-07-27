@@ -16,6 +16,19 @@
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
   </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const verses = [
+        "主は私に答えて言われた。「この幻を書き記せ。これを板の上にはっきりと記せ。走りながらでも読めるように。」（ハバクク書 2章2節）\nThe Lord answered me: Write the vision; make it plain on tablets, so he may run who reads it. (Habakkuk 2:2)",
+        "『わたしを呼べ。そうすれば、わたしはあなたに答え、あなたが知らない、理解を超えた大いなることをあなたに告げよう。』（エレミヤ書 33章3節）\nCall to me and I will answer you, and will tell you great and hidden things that you have not known. (Jeremiah 33:3)",
+        "見よ、主の使いが夢に現れて言った、『ダビデの子ヨセフよ、マリアを妻に迎えることを恐れるな。その胎に宿っているものは聖霊によるのである。』（福音書第1章20節）\nAn angel of the Lord appeared to him in a dream and said, \"Joseph son of David, do not be afraid to take Mary home as your wife, because what is conceived in her is from the Holy Spirit.\" (Matthew 1:20)",
+        "あなたがたは地の塩である。…あなたがたは世の光である。…人々の前に光を輝かせ、人々があなたがたの良い行いを見て、天におられるあなたがたの父をあがめるようにしなさい。（マタイによる福音書 5章13–16節）\nYou are the salt of the earth... You are the light of the world... Let your light shine before others, that they may see your good deeds and glorify your Father in heaven. (Matthew 5:13–16)",
+        "あなたがたは真理を知り、真理はあなたがたを自由にするであろう。（ヨハネによる福音書 8章32節）\nThen you will know the truth, and the truth will set you free. (John 8:32)"
+      ];
+      const verse = verses[Math.floor(Math.random() * verses.length)];
+      alert("📖 今日の一節：\n" + verse);
+    });
+  </script>
 </head>
 <body class="min-h-screen flex items-center justify-center p-4 font-[Noto Serif JP] text-white">
   <div class="card max-w-md w-full rounded-xl p-6 text-center">
